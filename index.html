@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>The Medium is the message</title>
+<style type="text/css">
+body {background-image:url("dark forest blur.jpg");}
+.box {color: red;}
+.img1 {background-image:url("dark forest 2.jpg");}
+.img2 {background-image:url("dark forest.jpg");}
+.img3 {background-image:url("forest.jpg");}
+.img4 {background-image:url("Fantasy Forest.jpg");}
+</style>
+<script type="text/javascript">
+function ChangeColor(t)
+{
+    if( t == '1' ){       
+        document.getElementById('here').className = "img1";       
+    }else if( t == '2' ) {
+        document.getElementById('here').className = "img2";
+    }else if( t == '3' ) {
+        document.getElementById('here').className = "img3";
+    }else if( t == '4' ) {
+        document.getElementById('here').className = "img4";
+    }
+}   
+</script>
+</head>
+<body>
+
+        <div class="box">
+            <h1 style="text-align: center; font-family:verdana"> The Medium is the Message </i> </h1>
+        </div>
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('green')">Green</button>
+        <script>
+                        function changeColor(color){
+                document.querySelector('.box').style.color = color;
+            }
+        </script>
+<table>
+    <tr>
+        <button onclick="ChangeColor('1');" style="cursor:pointer;">Blur</button>
+        <button onclick="ChangeColor('2');" style="cursor:pointer;">Colored</button>
+        <button onclick="ChangeColor('3');" style="cursor:pointer;">Fairytale</button>
+        <button onclick="ChangeColor('4');" style="cursor:pointer;">Fantasy</button>
+    </td>
+</table>
+<table width="100%" height="100%" id="here" class="def">
+    <tr>
+
+    </tr>
+    <tr>
+
+    </tr>
+</table>
+</body>
+</html>
